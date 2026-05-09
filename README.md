@@ -3,7 +3,7 @@ Are you tired of farming bosses to get the one item you are looking for? You do 
 
 Boss Reward System (mod_custom_loot)
 
-A compact module for AzerothCore that records boss kills in a database and allows players to summon a personal reward chest. The chest features an alphabetically sorted gossip menu with high-quality loot previews.
+A compact module for AzerothCore Playerbots that records boss kills in a database. After a boss kill you are rewarded with a reusable boss token which allows players to summon a personal reward chest. The chest features a gossip menu with alphabetically sorted loot list and item previews. The chests are temporary and are currently set to last for 60 seconds. To fill the list for loot selection, the boss reward is rolled for x times (currently set to 100 which euqals 100x the chance). Many parameters can be adjusted in the .cpp file.
 
 1. Directory Structure
 
