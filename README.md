@@ -94,7 +94,7 @@ WHERE `entry` = 59000;
 
     Kill Recording: When a boss dies, the script saves the boss_id and player_guid into the database.
 
-    Summoning: When the player uses the trigger (Item or Command), the script checks for a nearby chest within 15m to prevent spamming, and spawns the treasure chest containing quality-filtered loot (blue and above).
+    Chest Summoning: When the player uses the trigger (Item or Command), the script checks for a nearby chest within 15m to prevent spamming, and spawns the treasure chest containing quality-filtered loot (blue and above).
 
     Personalization: The chest only opens for the owner (GetOwnerGUID() == player->GetGUID()).
 
