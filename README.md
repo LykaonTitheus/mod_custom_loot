@@ -59,7 +59,7 @@ UPDATE `gameobject_template`
 SET `ScriptName` = 'mod_loot_item' 
 WHERE `entry` = 181061;
 
-4. Follow the instructions in this video (https://www.youtube.com/watch?v=1NSf82XvJWM) to add a new custom item to your .dbc so you can have a functioning boss token (which is used to spawn a treasure chest).
+4. Follow the instructions in this video (https://www.youtube.com/watch?v=1NSf82XvJWM) to add a new custom item to your .dbc so you can have a functioning boss token (which is used to spawn a treasure chest) with one important adjustment: do not use the item.dbc from patch-enUS.MPQ! Extract it from patch-enUS-3.MPQ instead as this is the most recent patch that overwrites the others (using the older patch-enUS.MPQ would lead to a lot of missing icons).
 In the item_template (world database) I duplicated the master health stone 22105 and gave it the ID 59000 which I added to a new patch file called patch-enUS-4.MPQ (the token now also heals you), you can change the stack size (column "stackable", I used 20) of the token and its level requirements (0) in the database, you can do it using this code on your world database:
 
 ### 1. Create the new item based on the Healthstone
